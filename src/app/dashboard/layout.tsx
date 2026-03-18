@@ -75,7 +75,7 @@ export default async function DashboardLayout({
           <UserButton />
         </header>
         
-        <main className="flex-1 p-6 bg-white">
+        <main className="flex-1 p-6 bg-gray-50">
           {children}
         </main>
       </div>

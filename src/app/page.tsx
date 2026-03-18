@@ -10,10 +10,10 @@ export default function Home() {
         <h1 className="text-2xl font-bold text-blue-600">InvoiceFlow</h1>
         <div className="flex gap-3">
           <Link href="/sign-in">
-            <Button variant="outline">Sign In</Button>
+            <Button variant="outline" className="text-gray-900">Sign In</Button>
           </Link>
           <Link href="/sign-up">
-            <Button>Get Started</Button>
+            <Button className="text-white">Get Started</Button>
           </Link>
         </div>
       </header>
@@ -30,7 +30,7 @@ export default function Home() {
           Secure, isolated, and professional-grade.
         </p>
         <Link href="/sign-up">
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" className="text-lg px-8 py-6 text-white">
             Start Free Trial
           </Button>
         </Link>

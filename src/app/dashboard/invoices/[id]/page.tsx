@@ -129,7 +129,7 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
           )}
           
           {/* Add Item Form */}
-          <form action={addInvoiceItem.bind(null, id)} className="mt-6 p-4 bg-blue-50/30 rounded-lg space-y-3">
+          <form action={addInvoiceItem.bind(null, id)} className="mt-6 p-4 bg-gray-50 rounded-lg space-y-3">
             <h4 className="font-semibold">Add Item</h4>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
               <input
