@@ -17,8 +17,8 @@ export default async function NewInvoicePage() {
           </Button>
         </Link>
         <div>
-          <h1 className="text-3xl font-bold">New Invoice</h1>
-          <p className="text-gray-600 mt-1">Create a new invoice</p>
+          <h1 className="text-3xl font-bold text-gray-900">New Invoice</h1>
+          <p className="text-gray-700 mt-1">Create a new invoice</p>
         </div>
       </div>
       
@@ -38,7 +38,7 @@ export default async function NewInvoicePage() {
           ) : (
             <form action={createInvoice} className="space-y-4">
               <div>
-                <label htmlFor="clientId" className="block text-sm font-medium mb-1">
+                <label htmlFor="clientId" className="block text-sm font-medium text-gray-900 mb-1">
                   Client *
                 </label>
                 <select
@@ -57,7 +57,7 @@ export default async function NewInvoicePage() {
               </div>
               
               <div>
-                <label htmlFor="dueDate" className="block text-sm font-medium mb-1">
+                <label htmlFor="dueDate" className="block text-sm font-medium text-gray-900 mb-1">
                   Due Date *
                 </label>
                 <input
@@ -65,19 +65,19 @@ export default async function NewInvoicePage() {
                   id="dueDate"
                   name="dueDate"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
               </div>
               
               <div>
-                <label htmlFor="notes" className="block text-sm font-medium mb-1">
+                <label htmlFor="notes" className="block text-sm font-medium text-gray-900 mb-1">
                   Notes
                 </label>
                 <textarea
                   id="notes"
                   name="notes"
                   rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   placeholder="Any additional notes..."
                 />
               </div>

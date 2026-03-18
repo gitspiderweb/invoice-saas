@@ -18,8 +18,8 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
           </Button>
         </Link>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold">{invoice.invoiceNumber}</h1>
-          <p className="text-gray-600 mt-1">Invoice details</p>
+          <h1 className="text-3xl font-bold text-gray-900">{invoice.invoiceNumber}</h1>
+          <p className="text-gray-700 mt-1">Invoice details</p>
         </div>
         <form action={deleteInvoice.bind(null, id)}>
           <Button type="submit" variant="destructive">Delete Invoice</Button>
@@ -96,7 +96,7 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
         </CardHeader>
         <CardContent>
           {invoice.items.length === 0 ? (
-            <p className="text-gray-500 text-center py-4">No items yet</p>
+            <p className="text-gray-600 text-center py-4">No items yet</p>
           ) : (
             <table className="w-full">
               <thead className="border-b">

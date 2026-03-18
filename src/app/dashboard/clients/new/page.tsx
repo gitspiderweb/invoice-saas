@@ -14,8 +14,8 @@ export default function NewClientPage() {
           </Button>
         </Link>
         <div>
-          <h1 className="text-3xl font-bold">New Client</h1>
-          <p className="text-gray-600 mt-1">Add a new client</p>
+          <h1 className="text-3xl font-bold text-gray-900">New Client</h1>
+          <p className="text-gray-700 mt-1">Add a new client</p>
         </div>
       </div>
       
@@ -27,7 +27,7 @@ export default function NewClientPage() {
         <CardContent>
           <form action={createClient} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1">
                 Name *
               </label>
               <input
@@ -35,13 +35,13 @@ export default function NewClientPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-500 text-gray-900"
                 placeholder="Company Name"
               />
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1">
                 Email *
               </label>
               <input
@@ -49,33 +49,33 @@ export default function NewClientPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-500 text-gray-900"
                 placeholder="client@example.com"
               />
             </div>
             
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-1">
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-1">
                 Phone
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-500 text-gray-900"
                 placeholder="+1 (555) 123-4567"
               />
             </div>
             
             <div>
-              <label htmlFor="address" className="block text-sm font-medium mb-1">
+              <label htmlFor="address" className="block text-sm font-medium text-gray-900 mb-1">
                 Address
               </label>
               <textarea
                 id="address"
                 name="address"
                 rows={3}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-500 text-gray-900"
                 placeholder="123 Main St, City, State 12345"
               />
             </div>

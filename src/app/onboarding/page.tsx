@@ -35,7 +35,7 @@ export default async function OnboardingPage() {
         <CardContent>
           <form action={createUserAndCompany} className="space-y-4">
             <div>
-              <label htmlFor="companyName" className="block text-sm font-medium mb-1">
+              <label htmlFor="companyName" className="block text-sm font-medium text-gray-900 mb-1">
                 Company Name *
               </label>
               <input
@@ -43,13 +43,13 @@ export default async function OnboardingPage() {
                 id="companyName"
                 name="companyName"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-500 text-gray-900"
                 placeholder="Acme Inc."
               />
             </div>
             
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium mb-1">
+              <label htmlFor="firstName" className="block text-sm font-medium text-gray-900 mb-1">
                 First Name *
               </label>
               <input
@@ -58,12 +58,12 @@ export default async function OnboardingPage() {
                 name="firstName"
                 required
                 defaultValue={user?.firstName || ''}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
             </div>
             
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium mb-1">
+              <label htmlFor="lastName" className="block text-sm font-medium text-gray-900 mb-1">
                 Last Name *
               </label>
               <input
@@ -72,7 +72,7 @@ export default async function OnboardingPage() {
                 name="lastName"
                 required
                 defaultValue={user?.lastName || ''}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
             </div>
             

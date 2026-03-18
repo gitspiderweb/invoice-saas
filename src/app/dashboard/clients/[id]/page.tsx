@@ -18,8 +18,8 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
           </Button>
         </Link>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold">{client.name}</h1>
-          <p className="text-gray-600 mt-1">Client details</p>
+          <h1 className="text-3xl font-bold text-gray-900">{client.name}</h1>
+          <p className="text-gray-700 mt-1">Client details</p>
         </div>
         <form action={deleteClient.bind(null, id)}>
           <Button type="submit" variant="destructive">Delete Client</Button>
@@ -34,7 +34,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
           <CardContent>
             <form action={updateClient.bind(null, id)} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1">
                   Name *
                 </label>
                 <input
@@ -43,12 +43,12 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                   name="name"
                   required
                   defaultValue={client.name}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1">
                   Email *
                 </label>
                 <input
@@ -57,12 +57,12 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                   name="email"
                   required
                   defaultValue={client.email}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
               </div>
               
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-1">
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-1">
                   Phone
                 </label>
                 <input
@@ -70,12 +70,12 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                   id="phone"
                   name="phone"
                   defaultValue={client.phone || ''}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
               </div>
               
               <div>
-                <label htmlFor="address" className="block text-sm font-medium mb-1">
+                <label htmlFor="address" className="block text-sm font-medium text-gray-900 mb-1">
                   Address
                 </label>
                 <textarea
@@ -83,7 +83,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                   name="address"
                   rows={3}
                   defaultValue={client.address || ''}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
               </div>
               
@@ -99,7 +99,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
           </CardHeader>
           <CardContent>
             {client.invoices.length === 0 ? (
-              <p className="text-gray-500 text-center py-4">No invoices yet</p>
+              <p className="text-gray-600 text-center py-4">No invoices yet</p>
             ) : (
               <div className="space-y-3">
                 {client.invoices.map((invoice) => (

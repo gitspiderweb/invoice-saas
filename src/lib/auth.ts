@@ -1,4 +1,5 @@
 import { auth, currentUser } from '@clerk/nextjs/server'
+import { redirect } from 'next/navigation'
 import { prisma } from './db'
 
 export async function getCurrentUser() {
@@ -17,10 +18,17 @@ export async function getCurrentUser() {
 }
 
 export async function requireAuth() {
+  const { userId } = await auth()
+  
+  if (!userId) {
+    redirect('/sign-in')
+  }
+  
   const user = await getCurrentUser()
   
+  // User is authenticated with Clerk but hasn't completed onboarding
   if (!user) {
-    throw new Error('Unauthorized')
+    redirect('/onboarding')
   }
   
   return user
@@ -30,7 +38,7 @@ export async function requireCompany() {
   const user = await requireAuth()
   
   if (!user.companyId) {
-    throw new Error('No company associated with user')
+    redirect('/onboarding')
   }
   
   return {

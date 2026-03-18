@@ -11,8 +11,8 @@ export default async function ClientsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Clients</h1>
-          <p className="text-gray-600 mt-1">Manage your clients</p>
+          <h1 className="text-3xl font-bold text-gray-900">Clients</h1>
+          <p className="text-gray-700 mt-1">Manage your clients</p>
         </div>
         <Link href="/dashboard/clients/new">
           <Button>
@@ -44,7 +44,7 @@ export default async function ClientsPage() {
                   className="p-4 border rounded-lg hover:bg-gray-50 transition"
                 >
                   <h3 className="font-semibold text-lg">{client.name}</h3>
-                  <p className="text-sm text-gray-600 mt-1">{client.email}</p>
+                  <p className="text-sm text-gray-700 mt-1">{client.email}</p>
                   {client.phone && (
                     <p className="text-sm text-gray-600">{client.phone}</p>
                   )}

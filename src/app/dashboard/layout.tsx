@@ -22,7 +22,7 @@ export default async function DashboardLayout({
       <aside className="w-64 bg-gray-900 text-white">
         <div className="p-6">
           <h1 className="text-2xl font-bold">InvoiceFlow</h1>
-          <p className="text-sm text-gray-400 mt-1">{user.company.name}</p>
+          <p className="text-sm text-gray-300 mt-1">{user.company.name}</p>
         </div>
         
         <nav className="px-4 space-y-1">
@@ -68,7 +68,7 @@ export default async function DashboardLayout({
       <div className="flex-1 flex flex-col">
         <header className="bg-white border-b px-6 py-4 flex items-center justify-between">
           <div>
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-gray-900">
               Welcome, {user.firstName}!
             </h2>
           </div>

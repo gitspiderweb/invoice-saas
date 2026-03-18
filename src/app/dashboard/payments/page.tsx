@@ -4,8 +4,8 @@ export default function PaymentsPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Payments</h1>
-        <p className="text-gray-600 mt-1">Track your payments</p>
+        <h1 className="text-3xl font-bold text-gray-900">Payments</h1>
+        <p className="text-gray-700 mt-1">Track your payments</p>
       </div>
       
       <Card>
@@ -14,7 +14,7 @@ export default function PaymentsPage() {
           <CardDescription>All payments received</CardDescription>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-500 text-center py-8">Payment tracking coming soon</p>
+          <p className="text-gray-600 text-center py-8">Payment tracking coming soon</p>
         </CardContent>
       </Card>
     </div>

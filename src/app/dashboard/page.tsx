@@ -33,39 +33,39 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Dashboard</h1>
-        <p className="text-gray-600 mt-1">Overview of your business</p>
+        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+        <p className="text-gray-700 mt-1">Overview of your business</p>
       </div>
       
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Total Invoices</CardTitle>
-            <FileText className="h-4 w-4 text-gray-600" />
+            <CardTitle className="text-sm font-medium text-gray-900">Total Invoices</CardTitle>
+            <FileText className="h-4 w-4 text-gray-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{totalInvoices}</div>
+            <div className="text-2xl font-bold text-gray-900">{totalInvoices}</div>
           </CardContent>
         </Card>
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Total Clients</CardTitle>
-            <Users className="h-4 w-4 text-gray-600" />
+            <CardTitle className="text-sm font-medium text-gray-900">Total Clients</CardTitle>
+            <Users className="h-4 w-4 text-gray-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{totalClients}</div>
+            <div className="text-2xl font-bold text-gray-900">{totalClients}</div>
           </CardContent>
         </Card>
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
-            <DollarSign className="h-4 w-4 text-gray-600" />
+            <CardTitle className="text-sm font-medium text-gray-900">Total Revenue</CardTitle>
+            <DollarSign className="h-4 w-4 text-gray-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold text-gray-900">
               {formatCurrency(Number(totalRevenue._sum.total) || 0)}
             </div>
           </CardContent>
@@ -73,8 +73,8 @@ export default async function DashboardPage() {
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Pending Amount</CardTitle>
-            <AlertCircle className="h-4 w-4 text-gray-600" />
+            <CardTitle className="text-sm font-medium text-gray-900">Pending Amount</CardTitle>
+            <AlertCircle className="h-4 w-4 text-gray-700" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
         </CardHeader>
         <CardContent>
           {invoices.length === 0 ? (
-            <p className="text-gray-500 text-center py-4">No invoices yet</p>
+            <p className="text-gray-600 text-center py-4">No invoices yet</p>
           ) : (
             <div className="space-y-4">
               {invoices.map((invoice) => (
