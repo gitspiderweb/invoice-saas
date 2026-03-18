@@ -1,0 +1,22 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+
+export default function PaymentsPage() {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-3xl font-bold">Payments</h1>
+        <p className="text-gray-600 mt-1">Track your payments</p>
+      </div>
+      
+      <Card>
+        <CardHeader>
+          <CardTitle>Payment History</CardTitle>
+          <CardDescription>All payments received</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-gray-500 text-center py-8">Payment tracking coming soon</p>
+        </CardContent>
+      </Card>
+    </div>
+  )
+}
