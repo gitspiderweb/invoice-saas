@@ -15,7 +15,7 @@ export default async function ClientsPage() {
           <p className="text-gray-700 mt-1">Manage your clients</p>
         </div>
         <Link href="/dashboard/clients/new">
-          <Button>
+          <Button className="text-gray-900">
             <Plus size={20} />
             New Client
           </Button>
@@ -24,15 +24,15 @@ export default async function ClientsPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>All Clients</CardTitle>
-          <CardDescription>A list of all your clients</CardDescription>
+          <CardTitle className="text-gray-900">All Clients</CardTitle>
+          <CardDescription className="text-gray-600">A list of all your clients</CardDescription>
         </CardHeader>
         <CardContent>
           {clients.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500 mb-4">No clients yet</p>
               <Link href="/dashboard/clients/new">
-                <Button>Add Your First Client</Button>
+                <Button className="text-gray-900">Add Your First Client</Button>
               </Link>
             </div>
           ) : (

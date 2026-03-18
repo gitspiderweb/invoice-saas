@@ -10,8 +10,8 @@ export default function PaymentsPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>Payment History</CardTitle>
-          <CardDescription>All payments received</CardDescription>
+          <CardTitle className="text-gray-900">Payment History</CardTitle>
+          <CardDescription className="text-gray-600">All payments received</CardDescription>
         </CardHeader>
         <CardContent>
           <p className="text-gray-600 text-center py-8">Payment tracking coming soon</p>

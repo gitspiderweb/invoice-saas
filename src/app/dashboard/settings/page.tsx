@@ -13,18 +13,18 @@ export default async function SettingsPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>Company Information</CardTitle>
-          <CardDescription>Your company details</CardDescription>
+          <CardTitle className="text-gray-900">Company Information</CardTitle>
+          <CardDescription className="text-gray-600">Your company details</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
             <p className="text-sm text-gray-600">Company Name</p>
-            <p className="font-medium">{user.company.name}</p>
+            <p className="font-medium text-gray-600">{user.company.name}</p>
           </div>
           {user.company.email && (
             <div>
               <p className="text-sm text-gray-600">Email</p>
-              <p className="font-medium">{user.company.email}</p>
+              <p className="font-medium text-gray-600">{user.company.email}</p>
             </div>
           )}
         </CardContent>
@@ -32,17 +32,17 @@ export default async function SettingsPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>User Profile</CardTitle>
-          <CardDescription>Your account information</CardDescription>
+          <CardTitle className="text-gray-900">User Profile</CardTitle>
+          <CardDescription className="text-gray-600">Your account information</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
             <p className="text-sm text-gray-600">Name</p>
-            <p className="font-medium">{user.firstName} {user.lastName}</p>
+            <p className="font-medium text-gray-600">{user.firstName} {user.lastName}</p>
           </div>
           <div>
             <p className="text-sm text-gray-600">Email</p>
-            <p className="font-medium">{user.email}</p>
+            <p className="font-medium text-gray-600">{user.email}</p>
           </div>
         </CardContent>
       </Card>

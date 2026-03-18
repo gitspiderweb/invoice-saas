@@ -77,7 +77,7 @@ export default async function DashboardPage() {
             <AlertCircle className="h-4 w-4 text-gray-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold text-gray-900">
               {formatCurrency(Number(pendingAmount._sum.total) || 0)}
             </div>
           </CardContent>
@@ -87,8 +87,8 @@ export default async function DashboardPage() {
       {/* Recent Invoices */}
       <Card>
         <CardHeader>
-          <CardTitle>Recent Invoices</CardTitle>
-          <CardDescription>Your latest invoices</CardDescription>
+          <CardTitle className="text-sm font-medium text-gray-900">Recent Invoices</CardTitle>
+          <CardDescription className="text-sm text-gray-600">Your latest invoices</CardDescription>
         </CardHeader>
         <CardContent>
           {invoices.length === 0 ? (

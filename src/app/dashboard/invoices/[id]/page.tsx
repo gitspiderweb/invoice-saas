@@ -30,7 +30,7 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>Client Information</CardTitle>
+            <CardTitle className="text-gray-900">Client Information</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             <div>
@@ -52,7 +52,7 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
         
         <Card>
           <CardHeader>
-            <CardTitle>Invoice Details</CardTitle>
+            <CardTitle className="text-gray-900">Invoice Details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             <div>
@@ -186,7 +186,7 @@ export default async function InvoiceDetailPage({ params }: { params: Promise<{ 
       {invoice.notes && (
         <Card>
           <CardHeader>
-            <CardTitle>Notes</CardTitle>
+            <CardTitle className="text-gray-900">Notes</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-gray-700">{invoice.notes}</p>

@@ -16,7 +16,7 @@ export default async function InvoicesPage() {
           <p className="text-gray-700 mt-1">Manage your invoices</p>
         </div>
         <Link href="/dashboard/invoices/new">
-          <Button>
+          <Button className="text-gray-900">
             <Plus size={20} />
             New Invoice
           </Button>
@@ -25,15 +25,15 @@ export default async function InvoicesPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>All Invoices</CardTitle>
-          <CardDescription>A list of all your invoices</CardDescription>
+          <CardTitle className="text-gray-900">All Invoices</CardTitle>
+          <CardDescription className="text-gray-600">A list of all your invoices</CardDescription>
         </CardHeader>
         <CardContent>
           {invoices.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500 mb-4">No invoices yet</p>
               <Link href="/dashboard/invoices/new">
-                <Button>Create Your First Invoice</Button>
+                <Button className="text-gray-900">Create Your First Invoice</Button>
               </Link>
             </div>
           ) : (

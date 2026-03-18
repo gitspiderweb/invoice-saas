@@ -27,8 +27,8 @@ export default async function OnboardingPage() {
     <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Welcome to InvoiceFlow</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-gray-900">Welcome to InvoiceFlow</CardTitle>
+          <CardDescription className="text-gray-600">
             Let's set up your company to get started
           </CardDescription>
         </CardHeader>

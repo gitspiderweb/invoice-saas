@@ -24,8 +24,8 @@ export default async function NewInvoicePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>Invoice Details</CardTitle>
-          <CardDescription>Enter the basic invoice information</CardDescription>
+          <CardTitle className="text-gray-900">Invoice Details</CardTitle>
+          <CardDescription className="text-gray-600">Enter the basic invoice information</CardDescription>
         </CardHeader>
         <CardContent>
           {clients.length === 0 ? (

@@ -29,7 +29,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>Client Information</CardTitle>
+            <CardTitle className="text-gray-900">Client Information</CardTitle>
           </CardHeader>
           <CardContent>
             <form action={updateClient.bind(null, id)} className="space-y-4">
@@ -94,8 +94,8 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
         
         <Card>
           <CardHeader>
-            <CardTitle>Invoices</CardTitle>
-            <CardDescription>Client invoice history</CardDescription>
+            <CardTitle className="text-gray-900">Invoices</CardTitle>
+            <CardDescription className="text-gray-600">Client invoice history</CardDescription>
           </CardHeader>
           <CardContent>
             {client.invoices.length === 0 ? (

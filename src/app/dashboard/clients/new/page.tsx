@@ -21,8 +21,8 @@ export default function NewClientPage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>Client Details</CardTitle>
-          <CardDescription>Enter the client information</CardDescription>
+          <CardTitle className="text-gray-900">Client Details</CardTitle>
+          <CardDescription className="text-gray-600">Enter the client information</CardDescription>
         </CardHeader>
         <CardContent>
           <form action={createClient} className="space-y-4">
