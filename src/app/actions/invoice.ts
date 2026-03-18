@@ -167,7 +167,7 @@ async function recalculateInvoiceTotals(invoiceId: string) {
     where: { invoiceId },
   })
   
-  const subtotal = items.reduce((sum, item) => sum + Number(item.amount), 0)
+  const subtotal = items.reduce((sum: number, item) => sum + Number(item.amount), 0)
   const tax = subtotal * 0.1 // 10% tax
   const total = subtotal + tax
   

@@ -72,7 +72,7 @@ export default async function DashboardLayout({
               Welcome, {user.firstName}!
             </h2>
           </div>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton />
         </header>
         
         <main className="flex-1 p-6 bg-gray-50">
