@@ -25,7 +25,7 @@ export default function Home() {
           <br />
           <span className="text-blue-600">For Your Business</span>
         </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
           Multi-tenant SaaS platform for managing invoices, clients, and payments. 
           Secure, isolated, and professional-grade.
         </p>
@@ -38,14 +38,14 @@ export default function Home() {
       
       {/* Features */}
       <section className="container mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Why InvoiceFlow?</h2>
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why InvoiceFlow?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
               <FileText className="text-blue-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Invoice Management</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Invoice Management</h3>
+            <p className="text-gray-700">
               Create, track, and manage invoices with ease
             </p>
           </div>
@@ -54,8 +54,8 @@ export default function Home() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
               <Users className="text-green-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Client Tracking</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Client Tracking</h3>
+            <p className="text-gray-700">
               Manage all your clients in one place
             </p>
           </div>
@@ -64,8 +64,8 @@ export default function Home() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-4">
               <DollarSign className="text-purple-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Payment Tracking</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Payment Tracking</h3>
+            <p className="text-gray-700">
               Monitor payments and outstanding invoices
             </p>
           </div>
@@ -74,8 +74,8 @@ export default function Home() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
               <Shield className="text-red-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Secure & Isolated</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure & Isolated</h3>
+            <p className="text-gray-700">
               Multi-tenant architecture with data isolation
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 border-t">
-        <p className="text-center text-gray-600">
+        <p className="text-center text-gray-700">
           © 2026 InvoiceFlow. All rights reserved.
         </p>
       </footer>
