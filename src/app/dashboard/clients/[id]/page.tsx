@@ -22,7 +22,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
           <p className="text-gray-700 mt-1">Client details</p>
         </div>
         <form action={deleteClient.bind(null, id)}>
-          <Button type="submit" variant="destructive">Delete Client</Button>
+          <Button type="submit" variant="destructive" className='text-gray-900'>Delete Client</Button>
         </form>
       </div>
       
@@ -87,7 +87,7 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                 />
               </div>
               
-              <Button type="submit">Update Client</Button>
+              <Button type="submit" className='text-gray-900'>Update Client</Button>
             </form>
           </CardContent>
         </Card>
@@ -110,11 +110,11 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
                   >
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="font-medium">{invoice.invoiceNumber}</p>
+                        <p className="font-medium text-gray-900">{invoice.invoiceNumber}</p>
                         <p className="text-sm text-gray-600">{formatDate(invoice.issueDate)}</p>
                       </div>
                       <div className="text-right">
-                        <p className="font-semibold">{formatCurrency(Number(invoice.total))}</p>
+                        <p className="font-semibold text-gray-900">{formatCurrency(Number(invoice.total))}</p>
                         <span className={`text-xs px-2 py-1 rounded-full ${
                           invoice.status === 'PAID' ? 'bg-green-100 text-green-800' :
                           invoice.status === 'SENT' ? 'bg-blue-100 text-blue-800' :

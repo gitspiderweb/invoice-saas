@@ -102,11 +102,11 @@ export default async function DashboardPage() {
                   className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 transition"
                 >
                   <div>
-                    <p className="font-medium">{invoice.invoiceNumber}</p>
+                    <p className="font-medium text-gray-900">{invoice.invoiceNumber}</p>
                     <p className="text-sm text-gray-600">{invoice.client.name}</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-semibold">{formatCurrency(Number(invoice.total))}</p>
+                    <p className="font-semibold text-gray-900">{formatCurrency(Number(invoice.total))}</p>
                     <span className={`text-xs px-2 py-1 rounded-full ${
                       invoice.status === 'PAID' ? 'bg-green-100 text-green-800' :
                       invoice.status === 'SENT' ? 'bg-blue-100 text-blue-800' :
