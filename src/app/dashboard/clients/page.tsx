@@ -43,7 +43,7 @@ export default async function ClientsPage() {
                   href={`/dashboard/clients/${client.id}`}
                   className="p-4 border rounded-lg hover:bg-gray-50 transition"
                 >
-                  <h3 className="font-semibold text-lg">{client.name}</h3>
+                  <h3 className="font-semibold text-lg text-gray-900">{client.name}</h3>
                   <p className="text-sm text-gray-700 mt-1">{client.email}</p>
                   {client.phone && (
                     <p className="text-sm text-gray-600">{client.phone}</p>

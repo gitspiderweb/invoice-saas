@@ -41,23 +41,23 @@ export default async function InvoicesPage() {
               <table className="w-full">
                 <thead className="border-b">
                   <tr className="text-left">
-                    <th className="pb-3 font-semibold">Invoice #</th>
-                    <th className="pb-3 font-semibold">Client</th>
-                    <th className="pb-3 font-semibold">Issue Date</th>
-                    <th className="pb-3 font-semibold">Due Date</th>
-                    <th className="pb-3 font-semibold">Amount</th>
-                    <th className="pb-3 font-semibold">Status</th>
-                    <th className="pb-3 font-semibold">Actions</th>
+                    <th className="pb-3 font-semibold text-gray-900">Invoice #</th>
+                    <th className="pb-3 font-semibold text-gray-900">Client</th>
+                    <th className="pb-3 font-semibold text-gray-900">Issue Date</th>
+                    <th className="pb-3 font-semibold text-gray-900">Due Date</th>
+                    <th className="pb-3 font-semibold text-gray-900">Amount</th>
+                    <th className="pb-3 font-semibold text-gray-900">Status</th>
+                    <th className="pb-3 font-semibold text-gray-900">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   {invoices.map((invoice) => (
                     <tr key={invoice.id} className="border-b last:border-0">
-                      <td className="py-3">{invoice.invoiceNumber}</td>
-                      <td className="py-3">{invoice.client.name}</td>
-                      <td className="py-3">{formatDate(invoice.issueDate)}</td>
-                      <td className="py-3">{formatDate(invoice.dueDate)}</td>
-                      <td className="py-3 font-semibold">{formatCurrency(Number(invoice.total))}</td>
+                      <td className="py-3 text-gray-600">{invoice.invoiceNumber}</td>
+                      <td className="py-3 text-gray-600">{invoice.client.name}</td>
+                      <td className="py-3 text-gray-600">{formatDate(invoice.issueDate)}</td>
+                      <td className="py-3 text-gray-600">{formatDate(invoice.dueDate)}</td>
+                      <td className="py-3 font-semibold text-gray-900">{formatCurrency(Number(invoice.total))}</td>
                       <td className="py-3">
                         <span className={`text-xs px-2 py-1 rounded-full ${
                           invoice.status === 'PAID' ? 'bg-green-100 text-green-800' :
