@@ -26,7 +26,6 @@ export interface FeatureFields {
   title: string
   description: string
   icon: string
-  iconColor?: string
   order: number
 }
 

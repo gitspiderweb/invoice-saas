@@ -161,9 +161,11 @@ Content Models define the structure of your content. You'll create three models:
 |------------|----------|------|----------|------------|
 | Title | title | Short text | Required, Max 50 chars | Single line |
 | Description | description | Long text | Required, Max 200 chars | Multiple line |
-| Icon | icon | Short text | Required, Example: "FileText" (Lucide icon name) | Single line |
-| Icon Color | iconColor | Short text | Optional, Example: "text-blue-600" | Single line |
+| Icon | icon | Short text | Required, Predefined values (see list below) | Dropdown |
 | Order | order | Integer | Required, Unique | Number editor |
+
+> 💡 **Tip:** For the **Icon** field, in the Validation tab add **"Predefined values"** and enter these options:
+> `FileText`, `Users`, `DollarSign`, `Shield`, `BarChart`, `Clock`, `Bell`, `Settings`, `Star`, `Zap`, `Globe`, `Lock`
 
 **Click "Save" after adding all fields.**
 
@@ -224,28 +226,24 @@ Content Models define the structure of your content. You'll create three models:
 - Title: `Quick Invoice Creation`
 - Description: `Create professional invoices in seconds with our intuitive interface`
 - Icon: `FileText`
-- Icon Color: `text-blue-600`
 - Order: `1`
 
 **Feature 2:**
 - Title: `Client Management`
 - Description: `Keep all your client information organized in one place`
 - Icon: `Users`
-- Icon Color: `text-green-600`
 - Order: `2`
 
 **Feature 3:**
 - Title: `Payment Tracking`
 - Description: `Track payments and see what's overdue at a glance`
 - Icon: `DollarSign`
-- Icon Color: `text-purple-600`
 - Order: `3`
 
 **Feature 4:**
 - Title: `Multi-Tenant Secure`
 - Description: `Your data is completely isolated and secure`
 - Icon: `Shield`
-- Icon Color: `text-red-600`
 - Order: `4`
 
 **Click "Publish" on each entry.**
